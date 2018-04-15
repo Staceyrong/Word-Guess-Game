@@ -1,0 +1,19 @@
+body {
+    background: pink;
+}
+
+.col-md-4 {
+    border: 3px dashed gray;
+    text-align: center;
+    padding-bottom: 400px;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    background: yellow;
+    text-align: center;
+}
+
+p {
+    margin: 40px auto;
+}
