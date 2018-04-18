@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Word Guess Game</title>
-  <script type="text/javascript" src="assets/javascript/game.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
+  
 </head>
 
 <body>
@@ -19,20 +19,22 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-4">
-                <img src="smiley.gif" alt="Smiley face" width="42" height="42">
+            
             </div>
             <div class="col-md-4">
                 <p>Press any key to get started</p>
                 <p>Wins</p>
+                <p id = "win"></p>
                 <p>Current Word</p>
-                <p id="answer"> _ _ _ _ _</p>
-                <p>Number of Guesses Remaing</p>
-                <p>Letters Already Guessed</p>
+                <p id = "current-word"></p>
+                <p id = "answer"></p>
+                <p id = "remain">Number of Guesses Remaing</p>
+                <p id = "letter">Letters Already Guessed</p>
             </div>
             <div class="col-md-2"></div>
         </div>
     </div>
 
-
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
