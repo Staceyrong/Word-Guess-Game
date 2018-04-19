@@ -1,3 +1,4 @@
+//Make variables
 var zodiac = ["rat", "ox", "tiger", "rabbit", "dragon", "snake", "horse", "goat", "monkey", "rooster", "dog", "pig"];
 var randomWord  = zodiac[Math.floor(Math.random() * zodiac.length)];
 var wins = 0;
@@ -30,6 +31,7 @@ document.onkeyup = function guessWord() {
             answerArr.push("_");
         }
     }
+    //make an array into a string, guess right, reset the game
     if (answerArr.join("") == randomWord) {
         wins ++;
         randomWord  = zodiac[Math.floor(Math.random() * zodiac.length)];
@@ -38,7 +40,7 @@ document.onkeyup = function guessWord() {
     }
 
     output();
-
+//guess wrong, reset the game
     if (maxChance == 0) {
         looses++;
         randomWord  = zodiac[Math.floor(Math.random() * zodiac.length)];
@@ -55,5 +57,10 @@ function output() {
     document.getElementById("letter").textContent = temp;
 }
 
+function replacingImage(){
+    if (randomWord == "rabbit") {
+    document.getElementById("image").src="https://www.suggestedpost.eu/wp-content/uploads/2017/10/cute-bunny-photos12.jpg"
+    }
+}
 
-
+replacingImage();

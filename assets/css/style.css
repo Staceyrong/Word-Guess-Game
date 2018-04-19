@@ -9,6 +9,11 @@ body {
     padding-top: 20px;
 }
 
+#image {
+    width: 300px;
+    height: 300px;
+}
+
 .jumbotron {
     background: lightcyan;
     text-align: center;
