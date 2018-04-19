@@ -5,15 +5,15 @@ body {
 .col-md-4 {
     border: 3px dashed gray;
     text-align: center;
-    padding-bottom: 400px;
+    padding-bottom: 300px;
     padding-top: 20px;
 }
 
 .jumbotron {
-    background: yellow;
+    background: lightcyan;
     text-align: center;
 }
 
 p {
-    margin: 40px auto;
+    margin: 20px auto;
 }

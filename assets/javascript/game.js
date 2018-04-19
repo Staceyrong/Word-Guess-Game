@@ -4,10 +4,9 @@ var wins = 0;
 var looses = 0;
 var maxChance = 10;
 var randomWord  = zodiac[Math.floor(Math.random() * zodiac.length)];
-var remainingLetter = randomWord.length;
 var answerArr = [];
 var temp = [];
-//var userGuess = [];
+
 
 for (var i = 0; i < randomWord.length; i++) {
     answerArr.push ("_");
@@ -25,7 +24,6 @@ document.onkeyup = function guessWord() {
     for (var j = 0; j < randomWord.length; j++) {
         if (temp.indexOf(randomWord[j]) > -1) {
             answerArr.push(randomWord[j]);
-            remainingLetter --;
         }
         else {
             answerArr.push("_");
@@ -37,11 +35,20 @@ document.onkeyup = function guessWord() {
         maxChance = 10;
         temp = [];
     }
-    output()
+
+    output();
+
+    if (maxChance == 0) {
+        looses++;
+        randomWord  = zodiac[Math.floor(Math.random() * zodiac.length)];
+        temp = [];
+        maxChance = 10;
+    }
 }
 
 function output() {
     document.getElementById("win").textContent = wins;
+    document.getElementById("lose").textContent = looses;
     document.getElementById("remaining").textContent = maxChance;
     document.getElementById("current-word").textContent = answerArr;
     document.getElementById("letter").textContent = temp;
