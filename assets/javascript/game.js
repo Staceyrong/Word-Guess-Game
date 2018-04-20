@@ -105,10 +105,3 @@ function output() {
     document.getElementById("letter").textContent = temp;
 }
 
-//function replacingImage(){
-   // if (randomWord == "rabbit") {
-    //document.getElementById("image").src="https://www.suggestedpost.eu/wp-content/uploads/2017/10/cute-bunny-photos12.jpg"
-    //}
-//}
-
-//replacingImage();
